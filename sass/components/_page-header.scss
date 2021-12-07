@@ -1,0 +1,12 @@
+.page-header {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-bottom: 1px solid;
+  border-color: var(--border-color--);
+  background-color: var(--primary-whiter-color--);
+
+  &__lists {
+    display: flex;
+    align-items: center;
+  }
+}
