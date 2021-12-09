@@ -19,6 +19,7 @@
     color: var(--hero-title-color--);
   }
   &__button {
+    @extend %button;
     transform: scale(1.15);
   }
 }

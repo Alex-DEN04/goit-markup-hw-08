@@ -11,7 +11,7 @@
     <link 
         rel="stylesheet" 
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./dist/css/main.min.css">
 </head>
 <body>
     <!--Шапка сайта-->
@@ -21,13 +21,13 @@
                 <a class="logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
                 <ul class="nav__list list">
                     <li class="nav__item"><a class="nav__link" href="./index.html">Студия</a></li>
-                    <li class="nav__item"><a class="nav__link current-link" href="./portfolio.html">Портфолио</a></li>
+                    <li class="nav__item"><a class="nav__link nav__current" href="./portfolio.html">Портфолио</a></li>
                     <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
                 </ul>
             </nav>
             <ul class="contact list">
                 <li class="contact__item">
-                    <a class="contact__link contact__link--top" href="mailto:info@devstudio.com">
+                    <a class="contact__link nav__contact" href="mailto:info@devstudio.com">
                         <svg class="contact__email-icon">
                             <use href="./images/icons.svg#icon-envelope">
                             </use>
@@ -35,7 +35,7 @@
                         info@devstudio.com</a>
                 </li>
                 <li class="contact__item">
-                    <a class="contact__link contact__link--top" href="tel:+380961111111">
+                    <a class="contact__link nav__contact" href="tel:+380961111111">
                         <svg class="contact__phone-icon">
                             <use href="./images/icons.svg#icon-smartphone">
                             </use>
@@ -50,12 +50,12 @@
         <section class="portfolio">
             <div class="container">
                 <h1 class="visually-hidden">Портфолио</h1>
-                <ul class="button__list list">
-                    <li class="button__item"><button class="portfolio__button" type="button">Все</button></li>
-                    <li class="button__item"><button class="portfolio__button" type="button">Веб-сайты</button></li>
-                    <li class="button__item"><button class="portfolio__button" type="button">Приложения</button></li>
-                    <li class="button__item"><button class="portfolio__button" type="button">Дизайн</button></li>
-                    <li class="button__item"><button class="portfolio__button" type="button">Маркетинг</button></li>
+                <ul class="btn__list list">
+                    <li class="btn__item"><button class="btn" type="button">Все</button></li>
+                    <li class="btn__item"><button class="btn" type="button">Веб-сайты</button></li>
+                    <li class="btn__item"><button class="btn" type="button">Приложения</button></li>
+                    <li class="btn__item"><button class="btn" type="button">Дизайн</button></li>
+                    <li class="btn__item"><button class="btn" type="button">Маркетинг</button></li>
                 </ul>
                 <ul class="portfolio__list list">
                     <li class="portfolio__item">
@@ -194,14 +194,14 @@
             <div class="address">
                 <a class="logo footer__logo" href="index.html">Web<span class="logo--white">Studio</span></a>
                 <address>
-                    <a class="map" href="https://goo.gl/maps/u9aJ5FSczd5m6GibA" target="_blank" rel="noopener noreferrer">г.
+                    <a class="address__map" href="https://goo.gl/maps/u9aJ5FSczd5m6GibA" target="_blank" rel="noopener noreferrer">г.
                         Киев, пр-т Леси Украинки, 26
                     </a>
                 </address>
                 <ul class="list">
-                    <li class="contact--bottom"><a class="contact__link contact__link--bottom"
+                    <li class="address__contact"><a class="contact__link address__link"
                             href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                    <li class="contact--bottom"><a class="contact__link contact__link--bottom" href="tel:+380961111111">+38
+                    <li class="address__contact"><a class="contact__link address__link" href="tel:+380961111111">+38
                             096 111 11 11</a></li>
                 </ul>
             </div>
