@@ -16,16 +16,16 @@
 <body>
     <!--Шапка сайта-->
     <header class="page-header">
-        <div class="container page-header__lists">
+        <div class="page-header__lists">
             <nav class="nav">
                 <a class="logo" href="./index.html">Web<span class="logo--black">Studio</span></a>
-                <ul class="nav__list list">
+                <ul class="nav__list">
                     <li class="nav__item"><a class="nav__link" href="./index.html">Студия</a></li>
                     <li class="nav__item"><a class="nav__link nav__current" href="./portfolio.html">Портфолио</a></li>
                     <li class="nav__item"><a class="nav__link" href="">Контакты</a></li>
                 </ul>
             </nav>
-            <ul class="contact list">
+            <ul class="contact">
                 <li class="contact__item">
                     <a class="contact__link nav__contact" href="mailto:info@devstudio.com">
                         <svg class="contact__email-icon">
@@ -48,16 +48,16 @@
     <!--Портфолио-->
     <main>
         <section class="portfolio">
-            <div class="container">
+            <div>
                 <h1 class="visually-hidden">Портфолио</h1>
-                <ul class="btn__list list">
+                <ul class="btn__list">
                     <li class="btn__item"><button class="btn" type="button">Все</button></li>
                     <li class="btn__item"><button class="btn" type="button">Веб-сайты</button></li>
                     <li class="btn__item"><button class="btn" type="button">Приложения</button></li>
                     <li class="btn__item"><button class="btn" type="button">Дизайн</button></li>
                     <li class="btn__item"><button class="btn" type="button">Маркетинг</button></li>
                 </ul>
-                <ul class="portfolio__list list">
+                <ul class="portfolio__list">
                     <li class="portfolio__item">
                         <div class="portfolio__wrap">
                             <div class="portfolio__image">
@@ -190,7 +190,7 @@
     </main>
     <!--Подвал-->
     <footer class="footer">
-        <div class="container footer__wrapper">
+        <div class="footer__wrapper">
             <div class="address">
                 <a class="logo footer__logo" href="index.html">Web<span class="logo--white">Studio</span></a>
                 <address>
@@ -198,7 +198,7 @@
                         Киев, пр-т Леси Украинки, 26
                     </a>
                 </address>
-                <ul class="list">
+                <ul class="address__list">
                     <li class="address__contact"><a class="contact__link address__link"
                             href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li class="address__contact"><a class="contact__link address__link" href="tel:+380961111111">+38
@@ -243,7 +243,7 @@
                     <label class="subscription__label" for="email">Подпишитесь на рассылку</label>
                     <input class="subscription__input" type="email" name="email" id="email" placeholder="E-mail" required>
                 </div>
-                <button class="button subscription__button" type="submit">Подписаться
+                <button class="subscription__button" type="submit">Подписаться
                     <svg class="button__icon">
                         <use href=".//images/icons.svg#icon-icon-send"></use>
                     </svg>

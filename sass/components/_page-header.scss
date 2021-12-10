@@ -6,6 +6,7 @@
   background-color: var(--primary-whiter-color--);
 
   &__lists {
+    @extend %container;
     display: flex;
     align-items: center;
   }
