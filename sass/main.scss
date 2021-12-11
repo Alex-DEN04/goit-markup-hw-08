@@ -1,3 +1,5 @@
+@import './base/normolize';
+
 @import './utils/variables';
 @import './utils/body';
 @import './utils/img';
@@ -6,6 +8,7 @@
 @import './utils/logo';
 @import './utils/title';
 @import './utils/socials';
+
 @import './components/page-header';
 @import './components/nav';
 @import './components/contact';
