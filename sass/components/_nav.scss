@@ -50,9 +50,22 @@
     margin-left: auto;
     margin-top: 10px;
     margin-right: 15px;
+    border-style: none;
+    background-color: inherit;
+  }
+  .btn__cross:hover,
+  .btn__cross:focus {
+    color: var(--accent-color--);
   }
   .mobile-menu {
-    padding: 35px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    margin-left: 40px;
+    margin-top: 0;
+    // @media screen and (min-width: 768px) {
+    //   display: flex;
+    // }
   }
   &__list {
     @extend %list;
@@ -67,7 +80,7 @@
   &__link {
     display: block;
     width: 100%;
-    padding-top: 32px;
+    // padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
     font-size: 40px;
@@ -89,11 +102,29 @@
   }
 
   &__contact {
+    justify-self: flex-end;
     padding-top: 32px;
     padding-bottom: 32px;
     font-weight: 500;
-    line-height: 1.14;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.02em;
     color: inherit;
+
+    &__contact:hover,
+    &__contact:focus {
+      font-size: 34px;
+      line-height: 1.18;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      line-height: 1.17;
+    }
+
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: 1.17;
+    }
   }
 }
