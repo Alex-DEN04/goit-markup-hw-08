@@ -1,4 +1,5 @@
 .opportunities {
+  display: none;
   padding-bottom: 94px;
   background-color: var(--primary-whiter-color--);
   @extend %container;
@@ -28,5 +29,8 @@
     text-transform: uppercase;
     background-color: var(--opportunities-bg-color--);
     color: var(--primary-whiter-color--);
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
   }
 }

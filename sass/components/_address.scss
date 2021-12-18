@@ -1,7 +1,21 @@
 .address {
-  width: 231px;
+  width: 100%;
   padding: 0;
   margin: 0;
+
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  // @media screen and (min-width: 1200px) {
+  //   display: block;
+  //   width: 100%;
+  // }
 
   .footer__logo {
     margin-top: 0;
@@ -26,6 +40,12 @@
     @extend %list;
   }
   &__contact {
+    @media screen and (max-width: 1199px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
     margin-top: 9px;
     display: block;
   }
