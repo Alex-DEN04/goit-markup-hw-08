@@ -6,7 +6,8 @@
     // margin-right: 50px;
   }
   &__link {
-    display: block;
+    display: flex;
+    align-items: center;
     font-size: 14px;
     line-height: 1.17;
     text-decoration: none;

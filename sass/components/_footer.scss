@@ -22,7 +22,14 @@
 @media screen and (min-width: 768px) {
   .address__socials {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+
     margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .address__socials {
+    justify-content: space-around;
+    width: 100%;
   }
 }

@@ -1,8 +1,18 @@
 .btn__list {
   @extend %list;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+}
+.btn__item {
+  margin-bottom: 15px;
 }
 .btn__item:not(:last-child) {
   margin-right: 8px;

@@ -1,5 +1,5 @@
 .address {
-  width: 100%;
+  // width: 100%;
   padding: 0;
   margin: 0;
 
@@ -12,10 +12,10 @@
   @media screen and (max-width: 767px) {
     margin-bottom: 60px;
   }
-  // @media screen and (min-width: 1200px) {
-  //   display: block;
-  //   width: 100%;
-  // }
+
+  @media screen and (min-width: 1200px) {
+    width: 231px;
+  }
 
   .footer__logo {
     margin-top: 0;
@@ -40,14 +40,14 @@
     @extend %list;
   }
   &__contact {
+    margin-top: 9px;
+    display: block;
+
     @media screen and (max-width: 1199px) {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
-
-    margin-top: 9px;
-    display: block;
   }
   &__link {
     line-height: 1.71;
