@@ -79,25 +79,30 @@
     color: var(--accent-color--);
   }
   .mobile-menu {
+    display: flex;
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 0;
 
+    @media screen and (max-width: 767px) {
+      // height: 100%;
+      flex-direction: column;
+    }
+
     @media screen and (min-width: 768px) {
-      display: flex;
       margin-left: auto;
       margin-right: 0;
     }
   }
   &__list {
     @extend %list;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 50%;
+    }
 
     @media screen and (min-width: 768px) {
       display: flex;
     }
-  }
-  &__item {
-    display: block;
   }
   @media screen and (min-width: 768px) {
     &__item:not(:last-child) {
@@ -174,6 +179,9 @@
   }
 }
 .contact__top {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 64px;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -201,5 +209,31 @@
 @media screen and (min-width: 1200px) {
   .contact__item:not(:last-child) {
     margin-right: 30px;
+  }
+}
+
+.nav-socials {
+  @extend %list;
+  // margin-top: auto;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 0;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  &__link {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: var(--accent-color--);
   }
 }

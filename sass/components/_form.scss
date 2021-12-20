@@ -12,6 +12,7 @@
   &__list {
     @extend %list;
   }
+
   &__field {
     position: relative;
     display: flex;
@@ -22,6 +23,9 @@
     margin-right: 0;
     margin-bottom: 10px;
     margin-left: 0;
+  }
+  &__field:nth-last-child(2) {
+    margin-bottom: 20px;
   }
   &__input {
     height: 40px;
@@ -92,6 +96,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
+    line-height: 1.17;
+
+    @media screen and (max-width: 479px) {
+      flex-wrap: wrap;
+    }
+  }
+  .checkbox__text {
+    display: block;
+    white-space: nowrap;
   }
   /* .checkbox__input {
   -webkit-appearance: none;
@@ -123,8 +137,9 @@
     border-color: transparent;
   }
   .checkbox__link {
-    display: inline-block;
+    display: block;
     margin-left: 5px;
+    white-space: nowrap;
     color: var(--accent-color--);
     text-decoration-skip-ink: none;
   }
