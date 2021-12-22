@@ -1712,18 +1712,6 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-@media screen and (max-width: 479px) {
-  .portfolio__pop-up-text {
-    padding-top: 11%;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .portfolio__pop-up-text {
-    padding-top: 15%;
-  }
-}
-
 .portfolio__box {
   padding-top: 20px;
   padding-bottom: 20px;
