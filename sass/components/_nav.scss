@@ -33,7 +33,7 @@
   }
   .menu-toggle:hover,
   .menu-toggle:focus {
-    background-color: var(--accent-color--);
+    fill: var(--accent-color--);
   }
   .menu-container {
     width: 100%;
@@ -59,41 +59,7 @@
       margin-left: 93px;
     }
   }
-  .menu-container.is-open {
-    transform: translateX(0);
-  }
-  .btn__cross {
-    display: block;
-    margin-left: auto;
-    margin-top: 10px;
-    margin-right: 15px;
-    border-style: none;
-    background-color: inherit;
 
-    @media screen and (min-width: 768px) {
-      display: none;
-    }
-  }
-  .btn__cross:hover,
-  .btn__cross:focus {
-    color: var(--accent-color--);
-  }
-  .mobile-menu {
-    display: flex;
-    margin-left: 40px;
-    margin-right: 40px;
-    margin-top: 0;
-
-    @media screen and (max-width: 767px) {
-      // height: 100%;
-      flex-direction: column;
-    }
-
-    @media screen and (min-width: 768px) {
-      margin-left: auto;
-      margin-right: 0;
-    }
-  }
   &__list {
     @extend %list;
     @media screen and (max-width: 767px) {
@@ -148,7 +114,6 @@
       background-color: var(--accent-color--);
     }
   }
-
   &__contact {
     // justify-self: flex-end;
 
@@ -157,12 +122,6 @@
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: inherit;
-
-    &__contact:hover,
-    &__contact:focus {
-      font-size: 34px;
-      line-height: 1.18;
-    }
 
     @media screen and (min-width: 768px) {
       font-size: 12px;
@@ -176,6 +135,48 @@
       padding-top: 32px;
       padding-bottom: 32px;
     }
+  }
+  &__contact:hover,
+  &__contact:focus {
+    font-size: 34px;
+    line-height: 1.18;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+.btn__cross {
+  display: block;
+  margin-left: auto;
+  margin-top: 10px;
+  margin-right: 15px;
+  border-style: none;
+  background-color: inherit;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.btn__cross:hover,
+.btn__cross:focus {
+  fill: var(--accent-color--);
+}
+.mobile-menu {
+  display: flex;
+  height: 100%;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 0;
+
+  @media screen and (max-width: 767px) {
+    // height: 100%;
+    flex-direction: column;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: 0;
   }
 }
 .contact__top {
@@ -214,7 +215,6 @@
 
 .nav-socials {
   @extend %list;
-  // margin-top: auto;
   display: flex;
   justify-content: flex-start;
   margin-bottom: 0;
@@ -224,7 +224,10 @@
   }
 
   &__item:not(:last-child) {
-    margin-right: 20px;
+    position: relative;
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
   }
 
   &__link {
