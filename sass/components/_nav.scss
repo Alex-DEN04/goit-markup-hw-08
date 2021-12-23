@@ -2,7 +2,6 @@
   width: 100%;
   display: flex;
   align-items: center;
-
   @media screen and (max-width: 1199px) {
     justify-content: space-between;
   }
@@ -10,37 +9,9 @@
   .logo--black {
     color: var(--logo-part-color--);
   }
-  .menu-toggle {
-    min-height: 40px;
-    min-width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    margin: 0;
-    padding: 0;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    outline: none;
-  }
-
-  @media (min-width: 768px) {
-    .menu-toggle {
-      display: none;
-    }
-  }
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    fill: var(--accent-color--);
-  }
   .menu-container {
     width: 100%;
-
-    // display: flex;
-    // justify-content: space-between;
-
     @media screen and (max-width: 767px) {
       position: fixed;
       top: 0;
@@ -115,13 +86,18 @@
     }
   }
   &__contact {
-    // justify-self: flex-end;
-
+    padding-top: 32px;
     font-weight: 500;
     font-size: 24px;
     line-height: 1.17;
     letter-spacing: 0.02em;
     color: inherit;
+
+    @media screen and (min-width: 768px) {
+      font-size: 12px;
+      line-height: 1.17;
+      padding: 0;
+    }
 
     @media screen and (min-width: 768px) {
       font-size: 12px;
@@ -136,13 +112,41 @@
       padding-bottom: 32px;
     }
   }
-  &__contact:hover,
-  &__contact:focus {
-    font-size: 34px;
-    line-height: 1.18;
+  @media screen and (max-width: 767px) {
+    &__contact:hover,
+    &__contact:focus {
+      font-size: 34px;
+      line-height: 1.18;
+    }
+    .contact__email-icon,
+    .contact__phone-icon {
+      display: none;
+    }
   }
 }
-
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: var(--accent-color--);
+}
 .menu-container.is-open {
   transform: translateX(0);
 }
@@ -170,7 +174,6 @@
   margin-top: 0;
 
   @media screen and (max-width: 767px) {
-    // height: 100%;
     flex-direction: column;
   }
 

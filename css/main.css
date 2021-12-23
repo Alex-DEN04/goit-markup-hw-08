@@ -533,38 +533,6 @@ img {
   color: var(--logo-part-color--);
 }
 
-.nav .menu-toggle {
-  min-height: 40px;
-  min-width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  cursor: pointer;
-  border: none;
-  border-radius: 50%;
-  outline: none;
-}
-
-@media (min-width: 768px) {
-  .nav .menu-toggle {
-    display: none;
-  }
-}
-
-.nav .menu-toggle:hover,
-.nav .menu-toggle:focus {
-  fill: var(--accent-color--);
-}
-
 .nav .menu-container {
   width: 100%;
 }
@@ -663,11 +631,20 @@ img {
 }
 
 .nav__contact {
+  padding-top: 32px;
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__contact {
+    font-size: 12px;
+    line-height: 1.17;
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -687,9 +664,47 @@ img {
   }
 }
 
-.nav__contact:hover, .nav__contact:focus {
-  font-size: 34px;
-  line-height: 1.18;
+@media screen and (max-width: 767px) {
+  .nav__contact:hover, .nav__contact:focus {
+    font-size: 34px;
+    line-height: 1.18;
+  }
+  .nav .contact__email-icon,
+  .nav .contact__phone-icon {
+    display: none;
+  }
+}
+
+.menu-toggle {
+  min-height: 40px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+  fill: var(--accent-color--);
 }
 
 .menu-container.is-open {

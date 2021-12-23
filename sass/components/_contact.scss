@@ -1,9 +1,5 @@
 .contact {
   @extend %list;
-
-  &__item:not(:last-child) {
-    // margin-right: 50px;
-  }
   &__link {
     display: flex;
     align-items: center;
