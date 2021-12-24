@@ -1,7 +1,6 @@
 .footer__form {
   width: 100%;
   display: flex;
-  padding-top: 12px;
 
   @media screen and (max-width: 1199px) {
     display: flex;
@@ -11,6 +10,7 @@
   @media screen and (min-width: 1200px) {
     justify-self: flex-end;
     width: 570px;
+    padding-top: 12px;
     margin-left: 93px;
     margin-top: 0;
     margin-bottom: auto;

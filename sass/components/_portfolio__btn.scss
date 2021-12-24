@@ -1,18 +1,21 @@
 .btn__list {
   @extend %list;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   display: flex;
   flex-wrap: wrap;
 
   @media screen and (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 30px;
   }
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 }
 .btn__item {
-  margin-bottom: 15px;
+  @media screen and(max-width: 767px) {
+    margin-bottom: 15px;
+  }
 }
 .btn__item:not(:last-child) {
   margin-right: 8px;
