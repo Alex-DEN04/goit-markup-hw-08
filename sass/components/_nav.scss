@@ -5,11 +5,9 @@
   @media screen and (max-width: 1199px) {
     justify-content: space-between;
   }
-
   .logo--black {
     color: var(--logo-part-color--);
   }
-
   &__list {
     @extend %list;
     @media screen and (max-width: 767px) {
